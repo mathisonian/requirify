@@ -1,7 +1,0 @@
-*.log
-node_modules
-*sublime*
-*config*
-
-# don't ignore .npmignore files
-!.npmignore
