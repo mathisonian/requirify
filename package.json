@@ -1,0 +1,16 @@
+{
+  "name": "requirify",
+  "version": "0.0.0",
+  "description": "create an npm-ready project that has a single dependency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Conlen <mc@mathisonian.com> (http://mathisonian.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^0.11.0",
+    "lodash": "^2.4.1",
+    "npm-exists": "^0.1.0"
+  }
+}
