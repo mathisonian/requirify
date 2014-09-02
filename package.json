@@ -1,6 +1,6 @@
 {
   "name": "requirify",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "create an npm-ready project that has a single dependency",
   "main": "index.js",
   "scripts": {
