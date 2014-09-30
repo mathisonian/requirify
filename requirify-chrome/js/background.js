@@ -20,6 +20,7 @@ chrome.browserAction.onClicked.addListener(function callback() {
                 text: 'On',
                 tabId: activeTabId
             });
+
             code = 'var elt = document.createElement("script");';
             code += 'elt.type="text/javascript";';
             code += 'elt.src = "https://s3.amazonaws.com/s3.mathisonian.com/javascripts/requirify-browser.js";';
@@ -30,3 +31,12 @@ chrome.browserAction.onClicked.addListener(function callback() {
   });
 
 });
+
+
+chrome.tabs.onUpdated.addListener(function(tabId) {
+
+    var index = activeTabs.indexOf(tabId);
+    if (index > -1) {
+        activeTabs.splice(index, 1);
+    }
+})
