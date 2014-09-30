@@ -1,19 +1,26 @@
 {
   "manifest_version": 2,
   "name": "Requirify",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "require('') in chrome devtools",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
- "content_scripts":
-  [
-    {
-      "matches": ["*://*/*"],
-      "js": ["js/content_script.js"],
-      "run_at": "document_end"
-    }
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/icon19.png", 
+      "38": "icons/icon38.png"
+    },
+    "default_title": "Requirify (Click to activate for this tab)"
+  },
+  "background": { "scripts": ["js/background.js"] },
+  "content_security_policy": "script-src 'self' https://s3.amazonaws.com/s3.mathisonian.com/javascripts/requirify-browser.js; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "http://*/",
+    "https://*/"
   ]
+
 }
