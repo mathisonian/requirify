@@ -1,0 +1,32 @@
+{
+  "name": "requirify",
+  "version": "0.1.0",
+  "description": "require() npm modules in the browser console",
+  "main": "requirify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathisonian/requirify.git"
+  },
+  "keywords": [
+    "require",
+    "devtools",
+    "requirify",
+    "chrome"
+  ],
+  "author": "Matthew Conlen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathisonian/requirify/issues"
+  },
+  "homepage": "https://github.com/mathisonian/requirify#readme",
+  "dependencies": {
+    "browser-request": "^0.3.3"
+  },
+  "devDependencies": {
+    "uglify": "^0.1.5",
+    "uglifyify": "^3.0.1"
+  }
+}
